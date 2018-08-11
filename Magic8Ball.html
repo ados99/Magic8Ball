@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" />
+<script>
+var output=new Array();
+output[0] = "Try again later";
+output[1] = "Absolutely not";
+output[2] = "Certain";
+output[3] = "Doubtful";
+output[4] = "Outlook looks good"
+output[5] = "Maybe";
+output[6] = "I don't know.";
+var rand = output[Math.floor(Math.random() * output.length)];
+</script>
+<title>
+Magic8Ball
+</title>
+<head>
+<body style bgcolor="white">
+<p1 style="color: purple; font-size:48px"><center>Get your fortune told!</center></p1>
+<p2 style="color: black; font-size:24px"><center>Ask Magic 8 Ball a question, if you dare...</center></p2>
+<center><form method="post" action="">
+<textarea name="comments" cols="25" rows="5">
+Ask question here
+</textarea><br>
+<button onclick="myFunction()">See your fate...</button> 
+<button type="reset" value="Reset">Reset</button>
+</center>
+<center>
+<table width="600" height="500" background="http://www.blindscientist.com/magic8ball/images/blank_8_ball.png" cellpadding="5" cellspacing="0"></center>
+<tr>
+<td valign="center" style="color:white" align="center">
+<script>
+document.write(rand)
+</script>
+</td>
+</tr>
+</table>
+</body>
+</html>
